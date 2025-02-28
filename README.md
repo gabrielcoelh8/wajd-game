@@ -1,25 +1,23 @@
 # WAJD - Data Structure and Algorithm Game
-Platform-Puzzle Educational Game develop in Godot 4
-
+Platform-Puzzle Educational Game developed in Godot 4
 ![](https://user-images.githubusercontent.com/64715936/278706322-7c3f7beb-8dee-4550-ae02-e8ec1213f944.png)
-
-## Sobre
-Resolva enigmas lógicos de programação com tempo limitado, pulando entre plataformas e levantando caixas numeradas seguindo o algoritmo que for escolhido.
-
-### Mecânica
-O jogador deve saltar entre as plataformas e organizar 5 caixas numeradas com números gerados de forma aleatória, ele poderá levantar e soltar caixas, uma por vez. 
-A forma pela qual ele vai organizar essas caixas seguirá um algoritmo de programação com tempo limitado entre cada etapa de um minuto, tornando o ato de organizar em não somente um mero organizar. 
-Para conseguir completar o enigma, o jogador terá que compreender a estrutura e padrão do algoritmo que ele escolheu para reproduzi-los nas caixas que estarão fora de ordem de forma correta, ordenar as caixas com números seguindo a ordem numérica crescentemente, atentando-se para não errar o padrão de passo a passo do algoritmo de ordenação escolhido. Cada passo deve resultar no exato vetor que o algoritmo gerou em sua execução. Se por fim, no último passo, todas as caixas estiverem na posição correta, o jogador vencerá.
-
-## Controles
-Teclado:
-* ``Setas direcionais (← ↑ →)``: andar e pular.
-* ``Espaço``: levantar uma caixa próxima.
-* ``CTRL``: soltar uma caixa da qual levantou em uma plataforma.
-* ``H``: ajuda (receber resposta do passo atual em forma de vetor por 10 segundos).
-* ``ESC``: pausa.
-
-## Algoritmos de Ordenação
+## About
+Solve logical programming puzzles with limited time, jumping between platforms and lifting numbered boxes following the chosen algorithm.
+### Rules
+- Limited time between each stage: *1 minute*.
+- The player must jump between platforms and organize 5 numbered boxes with randomly generated numbers in ascending order.
+- The player can lift and drop only one box at a time.
+- The way the player organizes these boxes will follow a programming algorithm.
+- Each step must result in the array that the algorithm would generate during its execution.
+- In the last stage, if all boxes are in the correct position: the player wins.
+## Controls
+Keyboard:
+* ``Directional arrows (← ↑ →)``: walk and jump.
+* ``Space``: lift a nearby box.
+* ``CTRL``: drop a box you have lifted onto a platform.
+* ``H``: help (receive the answer for the current step in array form for 10 seconds).
+* ``ESC``: pause.
+## Sorting Algorithms
 ### Bubble Sort
 ```python
 func bubble_sort(arr):
@@ -34,7 +32,6 @@ func bubble_sort(arr):
 				arr[i] = temp
 				swapped = true
 ```
-
 ### Selection Sort
 ```python
 func selection_sort(arr):
@@ -52,7 +49,6 @@ func selection_sort(arr):
 			arr[i] = arr[lower]
 			arr[lower] = temp
 ```
-
 ### Shaker Sort
 ```python
 func shaker_sort(arr):
